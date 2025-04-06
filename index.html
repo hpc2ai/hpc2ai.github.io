@@ -2,63 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>INF-HPC2AI</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom right, #ffffff, #eaf0f8);
-      color: #1e3a8a;
+      background-color: #f8fafc;
+      color: #1e293b;
+    }
+    header {
+      background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-direction: column;
-      min-height: 100vh;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
       text-align: center;
-      padding: 2rem;
     }
-    h1 {
+    header h1 {
       font-size: 3rem;
       font-weight: 700;
+    }
+    header p {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+    }
+    main {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    section {
+      margin-bottom: 4rem;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #0f172a;
       margin-bottom: 1rem;
     }
     p {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
       color: #334155;
-      max-width: 700px;
-      margin-bottom: 2rem;
+      line-height: 1.75;
     }
-    a.button {
-      background-color: #1e3a8a;
-      color: white;
-      padding: 0.75rem 1.5rem;
+    .img-banner {
+      width: 100%;
       border-radius: 0.5rem;
-      text-decoration: none;
-      font-weight: 500;
-      transition: background-color 0.3s;
-    }
-    a.button:hover {
-      background-color: #3b82f6;
+      margin-top: 2rem;
     }
     footer {
-      margin-top: 3rem;
+      background-color: #0f172a;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 2rem;
       font-size: 0.9rem;
-      color: #64748b;
     }
   </style>
 </head>
 <body>
-  <h1>INF-HPC2AI</h1>
-  <p>
-    Center for High-Performance Computing applied to Artificial Intelligence<br/>
-    at the Institute of Informatics – UFRGS
-  </p>
-  <a href="#about" class="button">Learn More</a>
+  <header>
+    <div>
+      <h1>INF-HPC2AI</h1>
+      <p>Center for High-Performance Computing applied to Artificial Intelligence<br>at the Institute of Informatics – UFRGS</p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>About the Center</h2>
+      <p>
+        The INF-HPC2AI is a premier research center dedicated to advancing scientific and technological frontiers through high-performance computing (HPC), with a strategic emphasis on artificial intelligence (AI). Hosted at the Institute of Informatics – UFRGS, the center integrates interdisciplinary research, state-of-the-art infrastructure, and collaborative innovation.
+      </p>
+      <img src="https://images.unsplash.com/photo-1581090700227-1e8e59f6a5d4" alt="HPC and AI systems" class="img-banner">
+    </section>
+
+    <section>
+      <h2>Research Areas</h2>
+      <p>
+        Our research spans scalable AI algorithms, heterogeneous computing, climate modeling, bioinformatics, natural language processing, and intelligent systems for scientific discovery. HPC infrastructure is leveraged to accelerate and scale these domains, delivering impactful outcomes across science, industry, and society.
+      </p>
+      <img src="https://images.unsplash.com/photo-1604079628044-9431d31b8a3c" alt="AI and data analysis" class="img-banner">
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Interested in collaborating or learning more? Reach out to our team at <a href="mailto:hpc2ai@inf.ufrgs.br">hpc2ai@inf.ufrgs.br</a>.
+        We welcome partnerships with academic, industrial, and governmental organizations.
+      </p>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 INF/UFRGS – All rights reserved.
+    &copy; 2025 INF-HPC2AI — Institute of Informatics, UFRGS. All rights reserved.
   </footer>
 </body>
 </html>
