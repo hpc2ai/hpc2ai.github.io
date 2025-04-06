@@ -1,0 +1,71 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Sparkles, Globe, Brain, Users } from "lucide-react";
+import { motion } from "framer-motion";
+
+export default function INFHPC2AIHome() {
+  return (
+    <main className="min-h-screen bg-white text-gray-800 p-6 md:p-12">
+      <section className="max-w-6xl mx-auto">
+        <motion.h1 
+          initial={{ opacity: 0, y: -20 }} 
+          animate={{ opacity: 1, y: 0 }} 
+          transition={{ duration: 0.6 }}
+          className="text-4xl md:text-5xl font-bold text-center mb-4"
+        >
+          INF-HPC2AI
+        </motion.h1>
+        <p className="text-center text-lg md:text-xl mb-8 text-gray-600">
+          Center for High-Performance Computing applied to Artificial Intelligence at the Institute of Informatics – UFRGS
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <Card className="shadow-lg">
+            <CardContent className="p-6">
+              <h2 className="text-2xl font-semibold mb-2 flex items-center gap-2">
+                <Brain /> Our Mission
+              </h2>
+              <p className="text-gray-700">
+                To advance the frontiers of scientific discovery and innovation by combining cutting-edge high-performance computing (HPC) with artificial intelligence (AI), fostering interdisciplinary research, and addressing complex challenges at scale.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="shadow-lg">
+            <CardContent className="p-6">
+              <h2 className="text-2xl font-semibold mb-2 flex items-center gap-2">
+                <Sparkles /> What We Do
+              </h2>
+              <p className="text-gray-700">
+                We conduct world-class research on scalable AI systems, optimize AI workloads on heterogeneous architectures, and collaborate with academia, industry, and government on impactful projects in health, energy, climate science, and more.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="shadow-lg">
+            <CardContent className="p-6">
+              <h2 className="text-2xl font-semibold mb-2 flex items-center gap-2">
+                <Users /> Our People
+              </h2>
+              <p className="text-gray-700">
+                Our team includes leading researchers, engineers, and students at the Institute of Informatics – UFRGS, with expertise in parallel computing, AI, optimization, and scientific modeling.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="shadow-lg">
+            <CardContent className="p-6">
+              <h2 className="text-2xl font-semibold mb-2 flex items-center gap-2">
+                <Globe /> Get Involved
+              </h2>
+              <p className="text-gray-700 mb-4">
+                We welcome collaborations, studentships, and research partnerships. Whether you're from academia, industry, or public sector, join us in shaping the future of intelligent computing.
+              </p>
+              <Button variant="default">Contact Us</Button>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+    </main>
+  );
+}
