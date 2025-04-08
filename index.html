@@ -57,28 +57,33 @@
     main {
       background-color: #f8f9fc;
       color: #000;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
       padding: 60px 30px;
     }
-    .section {
-      text-align: center;
-      max-width: 300px;
-      margin-bottom: 40px;
+    .news-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
     }
-    .section img {
+    .news-card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+    }
+    .news-card img {
       width: 100%;
-      height: auto;
-      border-radius: 10px;
+      border-radius: 8px;
+      margin-bottom: 15px;
     }
-    .section h2 {
-      font-size: 22px;
-      margin-top: 20px;
+    .news-card h3 {
+      font-size: 20px;
+      margin: 0 0 10px;
     }
-    .section p {
+    .news-card p {
       font-size: 16px;
-      line-height: 1.6;
+      line-height: 1.5;
     }
   </style>
 </head>
@@ -86,10 +91,11 @@
   <header>
     <div class="logo">HPC<span>/</span>AI</div>
     <nav>
+      <a href="#">Home</a>
       <a href="#about">About</a>
       <a href="#research">Research</a>
-      <a href="#news">News</a>
       <a href="#people">People</a>
+      <a href="#news">News</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="hero">
@@ -103,40 +109,23 @@
     </div>
   </header>
   <main>
-    <div class="section" id="about">
-      <img src="images/about.png" alt="About" />
-      <h2>About</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore etdo eiusmod tempor incididunt.
-      </p>
-    </div>
-    <div class="section" id="research">
-      <img src="images/research.png" alt="Research" />
-      <h2>Research</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur allisci di taconue eindidunt. Uvis ted lacuris lectus aliquam convaiuseatum.
-      </p>
-    </div>
-    <div class="section" id="news">
-      <img src="images/news.png" alt="News" />
-      <h2>News</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore etdo eiusmod tempor incididunt.
-      </p>
-    </div>
-    <div class="section" id="people">
-      <img src="image4.jpg" alt="People" />
-      <h2>People</h2>
-      <p>
-        Meet our team of dedicated researchers, engineers, and students driving innovation in HPC and AI at our center.
-      </p>
-    </div>
-    <div class="section" id="contact">
-      <img src="image5.jpg" alt="Contact" />
-      <h2>Contact</h2>
-      <p>
-        Reach out to us for collaboration, partnerships, or general inquiries. We’d love to hear from you.
-      </p>
+    <h2 style="text-align:center; font-size:32px; margin-bottom:40px;">Latest Highlights</h2>
+    <div class="news-container">
+      <div class="news-card">
+        <img src="highlight1.jpg" alt="Paper Publication" />
+        <h3>New Paper Accepted at SC Conference</h3>
+        <p>Our team presented breakthrough results on scalable AI inference on heterogeneous clusters at the Supercomputing 2025 conference.</p>
+      </div>
+      <div class="news-card">
+        <img src="highlight2.jpg" alt="Project" />
+        <h3>New Project on Energy-aware Scheduling</h3>
+        <p>We secured funding to explore dynamic scheduling methods that reduce power consumption without affecting performance in HPC/AI workloads.</p>
+      </div>
+      <div class="news-card">
+        <img src="highlight3.jpg" alt="Collaboration" />
+        <h3>Collaboration with NVIDIA</h3>
+        <p>We're thrilled to partner with NVIDIA on tools for profiling AI applications running on next-gen accelerators, starting Fall 2025.</p>
+      </div>
     </div>
   </main>
 </body>
