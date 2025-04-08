@@ -154,11 +154,37 @@
         <h3>Collaboration with NVIDIA</h3>
         <p>We're thrilled to partner with NVIDIA on tools for profiling AI applications running on next-gen accelerators, starting Fall 2025.</p>
       </div>
-      <div class="news-card">
-        <img src="images/about.png" alt="bla" />
-        <h3>Organization of event</h3>
-        <p>We're organizing a new event to the community... Read more....</p>
-      </div>
+<div class="news-card">
+  <h3>Trending News in HPC and AI</h3>
+  <p>Latest updates from trusted tech sources:</p>
+  <ul id="rss-feed" style="padding-left: 18px; font-size: 15px; line-height: 1.6;"></ul>
+</div>
+<script>
+  async function loadRSS() {
+    const feedUrls = [
+      'https://www.hpcwire.com/feed/',
+      'https://www.tomshardware.com/feeds/all',
+      'https://www.techradar.com/rss']
+
+    const parser = new DOMParser();
+    const feedContainer = document.getElementById('rss-feed');
+
+    for (const url of feedUrls) {
+      try {
+        const res = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(url)}`);
+        const data = await res.json();
+        data.items.slice(0, 2).forEach(item => {
+          const li = document.createElement('li');
+          li.innerHTML = `<a href="${item.link}" target="_blank">${item.title}</a>`;
+          feedContainer.appendChild(li);
+        });
+      } catch (err) {
+        console.error('Failed to fetch RSS feed:', err);
+      }
+    }
+  }
+  loadRSS();
+</script>
     </div>
   </main>
 <footer style="background-color: #000c1d; color: #ccc; text-align: center; padding: 20px; font-size: 14px;">
