@@ -166,6 +166,41 @@
       'https://www.tomshardware.com/feeds/all',
       'https://www.techradar.com/rss']
 
+    const feedContainer = document.getElementById('rss-feed');
+
+    for (const url of feedUrls) {
+      try {
+        const res = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(url)}`);
+        const data = await res.json();
+        data.items.slice(0, 2).forEach(item => {
+          const card = document.createElement('div');
+          card.style.border = '1px solid #ccc';
+          card.style.borderRadius = '8px';
+          card.style.overflow = 'hidden';
+          card.style.background = '#fff';
+          card.style.color = '#000';
+          card.innerHTML = `
+            <img src="${item.thumbnail || 'https://via.placeholder.com/600x300'}" alt="${item.title}" style="width: 100%; height: auto;">
+            <div style="padding: 15px;">
+              <h4 style="margin: 0 0 10px; font-size: 18px;">${item.title}</h4>
+              <p style="font-size: 14px; color: #333;">${item.description.slice(0, 140)}...</p>
+              <a href="${item.link}" target="_blank" style="color: #0066cc; text-decoration: none; font-weight: bold;">Read more</a>
+            </div>`;
+          feedContainer.appendChild(card);
+        });
+      } catch (err) {
+        console.error('Failed to fetch RSS feed:', err);
+      }
+    }
+  }
+  loadRSS();
+</script>
+  async function loadRSS() {
+    const feedUrls = [
+      'https://www.hpcwire.com/feed/',
+      'https://www.tomshardware.com/feeds/all',
+      'https://www.techradar.com/rss']
+
     const parser = new DOMParser();
     const feedContainer = document.getElementById('rss-feed');
 
