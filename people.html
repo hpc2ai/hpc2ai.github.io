@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>People – HPC2AI Research Center</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fc;
+      color: #000;
+    }
+    header {
+      background-color: #000c1d;
+      color: white;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .logo span {
+      color: #00b4ff;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 30px;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #000c1d;
+    }
+    .group {
+      margin-bottom: 50px;
+    }
+    .group h2 {
+      font-size: 24px;
+      color: #003366;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .member-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+    .member-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      padding: 15px;
+      text-align: center;
+    }
+    .member-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .member-card h3 {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+    .member-card p {
+      font-size: 14px;
+      color: #333;
+      margin: 0;
+    }
+    footer {
+      background-color: #000c1d;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">HPC<span>2</span>AI</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#research">Research</a>
+      <a href="people.html">People</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Our Team</h1>
+
+    <div class="group">
+      <h2>Faculty Members</h2>
+      <div class="member-grid">
+        <div class="member-card">
+          <img src="images/members/prof1.jpg" alt="Professor" />
+          <h3>Dr. Ana Silva</h3>
+          <p>Coordinator, HPC and AI Systems</p>
+        </div>
+        <div class="member-card">
+          <img src="images/members/prof2.jpg" alt="Professor" />
+          <h3>Dr. João Lima</h3>
+          <p>Algorithms & Energy Efficiency</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="group">
+      <h2>Postdoctoral Researchers</h2>
+      <div class="member-grid">
+        <div class="member-card">
+          <img src="images/members/postdoc1.jpg" alt="Postdoc" />
+          <h3>Dr. Carla Moura</h3>
+          <p>AI Model Optimization</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="group">
+      <h2>PhD Students</h2>
+      <div class="member-grid">
+        <div class="member-card">
+          <img src="images/members/phd1.jpg" alt="PhD" />
+          <h3>Lucas Ferreira</h3>
+          <p>Energy-aware Scheduling</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="group">
+      <h2>Master Students</h2>
+      <div class="member-grid">
+        <div class="member-card">
+          <img src="images/members/msc1.jpg" alt="MSc" />
+          <h3>Beatriz Almeida</h3>
+          <p>GPU Performance Tuning</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="group">
+      <h2>Undergraduate Students</h2>
+      <div class="member-grid">
+        <div class="member-card">
+          <img src="images/members/ug1.jpg" alt="BSc" />
+          <h3>Pedro Rocha</h3>
+          <p>Benchmarking Tools Development</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 HPC2AI Research Center – Institute of Informatics, UFRGS. All rights reserved.
+  </footer>
+</body>
+</html>
