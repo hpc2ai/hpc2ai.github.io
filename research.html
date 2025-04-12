@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Research – HPC2AI Research Center</title>
+<link href="styles-secondary.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="hero-header">
+<div class="logo">
+    HPC<span>2</span>AI
+  </div>
+<div class="menu-toggle" onclick="document.querySelector('nav.responsive').classList.toggle('open')">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<nav class="responsive">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="research.html">Research</a>
+<a href="people.html">People</a>
+<a href="news.html">News</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div class="hero-text">
+<h1>HIGH-PERFORMANCE COMPUTING TO<br/>ARTIFICIAL INTELLIGENCE</h1>
+<p>RESEARCH CENTER</p>
+<div class="hero-logos">
+<img alt="INF Logo" src="images/inf-branco.png"/>
+<img alt="UFRGS Logo" src="images/ufrgs-branco.png"/>
+</div>
+</div>
+</header>
+<div class="container">
+<h1 class="section-title">Our Research</h1>
+<div class="news-container">
+<div class="news-card">
+<img alt="Project 1" src="images/research-1.png"/>
+<h3>Exascale AI Inference for Scientific Workloads</h3>
+<p>Development of scalable AI models capable of running on exascale supercomputers for weather, genomics, and astrophysics applications.</p>
+</div>
+<div class="news-card">
+<img alt="Project 2" src="images/research-2.png"/>
+<h3>Energy-Efficient GPU Scheduling</h3>
+<p>Dynamic resource allocation and frequency tuning strategies to reduce power usage without compromising HPC performance.</p>
+</div>
+<div class="news-card">
+<img alt="Project 3" src="images/research-3.png"/>
+<h3>Large-Scale AI Model Optimization</h3>
+<p>Parallel hyperparameter tuning and pruning for billion-parameter models on distributed multi-GPU environments.</p>
+</div>
+<div class="news-card">
+<img alt="Project 4" src="images/research-1.png"/>
+<h3>Fault-Tolerant Deep Learning</h3>
+<p>Techniques for resilience and recovery in deep learning training under hardware or communication failures in HPC clusters.</p>
+</div>
+<div class="news-card">
+<img alt="Project 5" src="images/research-2.png"/>
+<h3>In-Situ Visualization with AI Assistance</h3>
+<p>Real-time visualization and pattern recognition using shared GPU execution between simulation and analysis components.</p>
+</div>
+<div class="news-card">
+<img alt="Project 6" src="images/research-3.png"/>
+<h3>AI-Driven Resource Management in HPC Clouds</h3>
+<p>Autonomous scheduling and auto-scaling of cloud-native HPC workloads using reinforcement learning and predictive models.</p>
+</div>
+</div>
+</div>
+<footer>
+    © 2025 HPC2AI Research Center – Institute of Informatics, UFRGS. All rights reserved.
+  </footer>
+<script>
+  document.addEventListener('click', function(e) {
+    const nav = document.querySelector('nav.responsive');
+    const toggle = document.querySelector('.menu-toggle');
+    if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+      nav.classList.remove('open');
+    }
+  });
+</script>
+</body>
+</html>
