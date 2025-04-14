@@ -504,7 +504,7 @@ footer {
 
 /* Container principal da seção */
 main.container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 60px auto;
   padding: 0 20px;
 }
@@ -648,4 +648,68 @@ main.container {
 .member-card p {
   font-size: 0.95rem;
   color: #555;
+}
+
+/* Abas de navegação */
+.tab-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0 30px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 2px solid #00b4ff;
+  background-color: white;
+  color: #00b4ff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-button.active,
+.tab-button:hover {
+  background-color: #00b4ff;
+  color: white;
+}
+
+/* Conteúdo de cada aba */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Listas */
+.publication-list,
+.software-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.publication-list li,
+.software-list li {
+  margin-bottom: 15px;
+}
+
+.year-divider {
+  border: none;
+  height: 2px;
+  background-color: #e0e0e0;
+  margin: 50px 0;
+}
+
+/* Esconde todas as abas por padrão */
+.tab-content {
+  display: none !important;
+}
+.tab-content.active {
+  display: block !important;
 }
