@@ -1,85 +1,205 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Research – HPC2AI Research Center</title>
-<link href="styles-secondary.css" rel="stylesheet"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research – HPC2AI Research Center</title>
+  <link rel="stylesheet" href="styles-secondary.css" />
 </head>
 <body>
-<header class="hero-header">
-<div class="logo">
-    HPC<span>2</span>AI
+
+  <header class="hero-header">
+    <div class="logo">HPC<span>2</span>AI</div>
+    <div class="menu-toggle" onclick="document.querySelector('nav.responsive').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </div>
+    <nav class="responsive">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="people.html">People</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hero-text">
+      <h1>HIGH-PERFORMANCE COMPUTING TO<br />ARTIFICIAL INTELLIGENCE</h1>
+      <p>RESEARCH CENTER</p>
+      <div class="hero-logos">
+        <img src="images/inf-branco.png" alt="INF Logo" />
+        <img src="images/ufrgs-branco.png" alt="UFRGS Logo" />
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="tab-navigation">
+      <button class="tab-button active" onclick="showTab('projects')">Projects</button>
+      <button class="tab-button" onclick="showTab('publications')">Publications</button>
+      <button class="tab-button" onclick="showTab('softwares')">Softwares</button>
+    </div>
+
+    <div id="projects" class="tab-content active">
+      <h1 class="section-title">Projects</h1>
+      <div class="news-container">
+        <div class="news-card">
+          <img alt="Project 1" src="images/research-1.png"/>
+          <h3>Exascale AI Inference for Scientific Workloads</h3>
+          <p>Development of scalable AI models capable of running on exascale supercomputers for weather, genomics, and astrophysics applications.</p>
+        </div>
+        <div class="news-card">
+          <img alt="Project 2" src="images/research-2.png"/>
+          <h3>Energy-Efficient GPU Scheduling</h3>
+          <p>Dynamic resource allocation and frequency tuning strategies to reduce power usage without compromising HPC performance.</p>
+        </div>
+        <div class="news-card">
+          <img alt="Project 3" src="images/research-3.png"/>
+          <h3>Large-Scale AI Model Optimization</h3>
+          <p>Parallel hyperparameter tuning and pruning for billion-parameter models on distributed multi-GPU environments.</p>
+        </div>
+        <div class="news-card">
+          <img alt="Project 4" src="images/research-1.png"/>
+          <h3>Fault-Tolerant Deep Learning</h3>
+          <p>Techniques for resilience and recovery in deep learning training under hardware or communication failures in HPC clusters.</p>
+        </div>
+        <div class="news-card">
+          <img alt="Project 5" src="images/research-2.png"/>
+          <h3>In-Situ Visualization with AI Assistance</h3>
+          <p>Real-time visualization and pattern recognition using shared GPU execution between simulation and analysis components.</p>
+        </div>
+        <div class="news-card">
+          <img alt="Project 6" src="images/research-3.png"/>
+          <h3>AI-Driven Resource Management in HPC Clouds</h3>
+          <p>Autonomous scheduling and auto-scaling of cloud-native HPC workloads using reinforcement learning and predictive models.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="publications" class="tab-content">
+      <h1 class="section-title">Publications</h1>
+    
+      <div class="publication-year">
+        <h2>2025</h2>
+        <ul class="publication-list">
+          <li>
+            <strong>Maas, W., Rossi, F. D., Luizelli, M. C., Navaux, P.O.A., Lorenzon, A.F.</strong><br>
+            “Investigating Cloud Instances to Achieve Optimal Trade-offs between Performance-Cost Efficiency”, Springer Computing.
+            <a href="https://link.springer.com/article/10.1007/s00607-025-01444-9" class="pub-link" target="_blank">Access Paper</a>
+          </li>
+        </ul>
+      </div>
+      <hr class="year-divider" />
+      <div class="publication-year">
+        <h2>2024</h2>
+        <ul class="publication-list">
+          <li>
+            <strong>Lorenzon, A. F., Navaux, P. O. A., Sardinha A., Messer, B.</strong><br>
+            “Towards Performance Portability of an Oil and Gas Application on Heterogeneous Architectures”, SBAC-PAD.
+            <a href="https://ieeexplore.ieee.org/abstract/document/10763888/" class="pub-link" target="_blank">Access Paper</a>
+          </li>
+
+          <li>
+            <strong>Araujo, T., Lorenzon, A. F., Navaux, P. O. A.</strong><br>
+            “Leveraging Cloud Computing for Stock Market Forecasting with Reinforcement Learning”, SBAC-PADW.
+            <a href="https://ieeexplore.ieee.org/abstract/document/10764559" class="pub-link" target="_blank">Access Paper</a>
+          </li>
+          <li>
+            <strong>Napa, M. A. G., Lorenzon, A. F.</strong><br>
+            “A Systematic Literature Review of I/O Optimization in HPC and Cloud Computing Environments”, SBAC-PADW.
+            <a href="https://ieeexplore.ieee.org/abstract/document/10764543" class="pub-link" target="_blank">Access Paper</a>
+          </li>
+          
+          <li>
+            <strong>Reis, M. A., Kunas, C. A., Araujo, T. S., Schneiders, P. B. A., Nakayama, L. F., Rados, D. R. V., Umpierre, R. N., Berwanger, D. L., Malerbi, F. K., Navaux, P. O. A., Schaan, B. D..</strong><br>
+            “Advancing healthcare with artificial intelligence: diagnostic accuracy of machine learning algorithm in diagnosis of diabetic retinopathy in the Brazilian population”, Diabetology and Metabolic Syndrome.
+            <a href="https://link.springer.com/article/10.1186/s13098-024-01447-0" class="pub-link" target="_blank">Access Paper</a>
+          </li>
+
+          <li>
+            <strong>Coelho, M., Ocana, K., Pereira, A., Porto, A., Cardoso, D., Lorenzon, A., Oliveira, R., Navaux, P. O. A., Osthof, C.</strong><br>
+            “Machine Learning Regression-Based Prediction for Improving Performance and Energy Consumption in HPC Platforms”, CARLA.
+            <a href="https://link.springer.com/chapter/10.1007/978-3-031-80084-9_13" class="pub-link" target="_blank">Access Paper</a>
+          </li>
+          <li>
+            <strong>Kunas, C. A., Freytag, G., Navaux, P. O. A.</strong><br>
+            “Enhancing Reverse Time Migration Simulations in HPC Systems Through I/O and Computation Overlapping”, CARLA.
+            <a href="https://link.springer.com/chapter/10.1007/978-3-031-80084-9_5" class="pub-link" target="_blank">Access Paper</a>
+          </li>
+          <li>
+            <strong>Solórzano, A. L. V., Navaux, P. O. A., Schnorr, L. M.</strong><br>
+            “Temporal load imbalance on Ondes3D seismic simulator for different multicore architectures”, arXiv.
+            <a href="https://arxiv.org/abs/2409.11392" class="pub-link" target="_blank">Access Paper</a>
+          </li>
+          <li>
+            <strong>Krause, A. B., Santos, P. C., Lorenzon, A. F., Navaux, P. O. A.</strong><br>
+            “HBPB, applying reuse distance to improve cache efficiency proactively”, JPDC.
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0743731524000832" class="pub-link" target="_blank">Access Paper</a>
+          </li>
+          <li>
+            <strong>Rigon, P., Schussler, B., Sardinha, A., Silva, P. M., Oliveira, F., Carissimi, A., Panetta, J., Spiga, F., Lorenzon, A. F., Navaux, P. O. A.</strong><br>
+            “Harnessing Data Movement Strategies to Optimize Performance-Energy Efficiency of Oil & Gas Simulations in HPC”, EuroPar.
+            <a href="https://link.springer.com/chapter/10.1007/978-3-031-69766-1_15" class="pub-link" target="_blank">Access Paper</a>
+          </li>
+          <li>
+            <strong>Maas, W., Souza, P. S., Luizelli, M. C., Rossi, F. D., Navaux, P. O. A., Lorenzon, A. F.</strong><br>
+            “An ANN-Guided Multi-Objective Framework for Power-Performance Balancing in HPC Systems”, Computing Frontiers.
+            <a href="https://dl.acm.org/doi/abs/10.1145/3649153.3649185" class="pub-link" target="_blank">Access Paper</a>
+          </li>
+          <li>
+            <strong>Freytag, G., Kunas, C. A., Rech, P. Navaux, P. O. A.</strong><br>
+            “Interleaved Execution of Approximated CUDA Kernels in Iterative Applications", PDP.
+            <a href="https://ieeexplore.ieee.org/abstract/document/10495550" class="pub-link" target="_blank">Access Paper</a>
+          </li>
+          <li>
+            <strong>Schussler, B. , Rigon, P., Lorenzon, A. F., Navaux, P. O. A.</strong><br>
+            “BTO, Block and Thread Optimization of GPU Kernels on Geophysical Exploration", PDP.
+            <a href="https://ieeexplore.ieee.org/abstract/document/10495581" class="pub-link" target="_blank">Access Paper</a>
+          </li>
+        </ul>
+      </div>
+    <hr class="year-divider" />
+    <div class="publication-year">
+      <h2>2023</h2>
+      <ul class="publication-list">
+        <li>
+          <strong>Navaux, P.O.A., Lorenzon, A.F., Serpa, M. S.</strong><br>
+          “Challenges in High-Performance Computing”, JBCS.
+          <a href="https://journals-sol.sbc.org.br/index.php/jbcs/article/view/2219" class="pub-link" target="_blank">Access Paper</a>
+        </li>
+        <li>
+          <strong>Carneiro, A. R., Bez, J. L., Osthoff, C., Schnorr, L. M., Navaux, P.O.A.</strong><br>
+          “Uncovering i/o demands on hpc platforms: Peeking under the hood of santos dumont”, JPDC.
+          <a href="https://www.sciencedirect.com/science/article/pii/S0743731523001144" class="pub-link" target="_blank">Access Paper</a>
+        </li>
+      </ul>
+    </div>
   </div>
-<div class="menu-toggle" onclick="document.querySelector('nav.responsive').classList.toggle('open')">
-<span></span>
-<span></span>
-<span></span>
-</div>
-<nav class="responsive">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="research.html">Research</a>
-<a href="people.html">People</a>
-<a href="news.html">News</a>
-<a href="contact.html">Contact</a>
-</nav>
-<div class="hero-text">
-<h1>HIGH-PERFORMANCE COMPUTING TO<br/>ARTIFICIAL INTELLIGENCE</h1>
-<p>RESEARCH CENTER</p>
-<div class="hero-logos">
-<img alt="INF Logo" src="images/inf-branco.png"/>
-<img alt="UFRGS Logo" src="images/ufrgs-branco.png"/>
-</div>
-</div>
-</header>
-<div class="container">
-<h1 class="section-title">Our Research</h1>
-<div class="news-container">
-<div class="news-card">
-<img alt="Project 1" src="images/research-1.png"/>
-<h3>Exascale AI Inference for Scientific Workloads</h3>
-<p>Development of scalable AI models capable of running on exascale supercomputers for weather, genomics, and astrophysics applications.</p>
-</div>
-<div class="news-card">
-<img alt="Project 2" src="images/research-2.png"/>
-<h3>Energy-Efficient GPU Scheduling</h3>
-<p>Dynamic resource allocation and frequency tuning strategies to reduce power usage without compromising HPC performance.</p>
-</div>
-<div class="news-card">
-<img alt="Project 3" src="images/research-3.png"/>
-<h3>Large-Scale AI Model Optimization</h3>
-<p>Parallel hyperparameter tuning and pruning for billion-parameter models on distributed multi-GPU environments.</p>
-</div>
-<div class="news-card">
-<img alt="Project 4" src="images/research-1.png"/>
-<h3>Fault-Tolerant Deep Learning</h3>
-<p>Techniques for resilience and recovery in deep learning training under hardware or communication failures in HPC clusters.</p>
-</div>
-<div class="news-card">
-<img alt="Project 5" src="images/research-2.png"/>
-<h3>In-Situ Visualization with AI Assistance</h3>
-<p>Real-time visualization and pattern recognition using shared GPU execution between simulation and analysis components.</p>
-</div>
-<div class="news-card">
-<img alt="Project 6" src="images/research-3.png"/>
-<h3>AI-Driven Resource Management in HPC Clouds</h3>
-<p>Autonomous scheduling and auto-scaling of cloud-native HPC workloads using reinforcement learning and predictive models.</p>
-</div>
-</div>
-</div>
-<footer>
-    © 2025 HPC2AI Research Center – Institute of Informatics, UFRGS. All rights reserved.
+
+    <div id="softwares" class="tab-content">
+      <h1 class="section-title">Softwares</h1>
+      <ul class="software-list">
+        <li><strong>SchedSim:</strong> Simulation toolkit for evaluating GPU-sharing strategies in multi-user environments.</li>
+        <li><strong>DeepCheck:</strong> Python library for tracking accuracy and recovery overheads in resilient DL training.</li>
+        <li><strong>VizStream:</strong> Lightweight framework for in-situ AI-assisted visualization and compression.</li>
+      </ul>
+    </div>
+    
+  </main>
+
+  <footer>
+    &copy; 2025 HPC2AI Research Center – Institute of Informatics, UFRGS. All rights reserved.
   </footer>
-<script>
-  document.addEventListener('click', function(e) {
-    const nav = document.querySelector('nav.responsive');
-    const toggle = document.querySelector('.menu-toggle');
-    if (!nav.contains(e.target) && !toggle.contains(e.target)) {
-      nav.classList.remove('open');
-    }
-  });
-</script>
+
+  <script>
+      function showTab(id) {
+  const contents = document.querySelectorAll('.tab-content');
+  const buttons = document.querySelectorAll('.tab-button');
+  contents.forEach(el => el.classList.remove('active'));
+  buttons.forEach(btn => btn.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.currentTarget.classList.add('active');
+}
+    
+  </script>
 </body>
 </html>
