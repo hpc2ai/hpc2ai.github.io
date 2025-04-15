@@ -148,6 +148,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   min-height: 450px; /* adjust based on content */
+  height: 100%; /* ou min-height: 400px; */
 }
 
 .news-card img {
@@ -712,4 +713,77 @@ main.container {
 }
 .tab-content.active {
   display: block !important;
+}
+
+.research-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f8f9fc;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  height: 100%; /* Para manter altura igual com outros cards */
+  position: relative;
+}
+.research-card .project-abstract {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: justify;
+  margin-top: 8px;
+}
+
+.research-card .toggle-btn {
+  margin-top: auto;
+  align-self: center;
+  background-color: #004c97;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.research-card .toggle-btn:hover {
+  background-color: #006edc;
+}
+
+.project-abstract {
+  display: none;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-top: 8px;
+}
+
+.research-card h3 {
+  font-size: 1.2rem;
+  color: #000c1d;
+  margin: 0;
+}
+
+.research-card p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.toggle-btn {
+  background-color: #004c97;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.toggle-btn:hover {
+  background-color: #006edc;
+}
+
+.news-container .research-card {
+  flex: 1 1 300px;
+  min-height: 230px; /* ajuste conforme o layout desejado */
 }
