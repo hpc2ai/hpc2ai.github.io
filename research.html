@@ -25,8 +25,8 @@
       <h1>HIGH-PERFORMANCE COMPUTING TO<br />ARTIFICIAL INTELLIGENCE</h1>
       <p>RESEARCH CENTER</p>
       <div class="hero-logos">
-        <img src="images/inf-branco.png" alt="INF Logo" />
-        <img src="images/ufrgs-branco.png" alt="UFRGS Logo" />
+        <img src="images/logo/inf-branco.png" alt="INF Logo" />
+        <img src="images/logo/ufrgs-branco.png" alt="UFRGS Logo" />
       </div>
     </div>
   </header>
@@ -42,36 +42,84 @@
     <div id="projects" class="tab-content active">
       <h1 class="section-title">Projects</h1>
       <div class="news-container">
-        <div class="news-card">
-          <img alt="Project 1" src="images/research-1.png"/>
-          <h3>Exascale AI Inference for Scientific Workloads</h3>
-          <p>Development of scalable AI models capable of running on exascale supercomputers for weather, genomics, and astrophysics applications.</p>
+        <div class="research-card">
+          <!--<img class="research-img" alt="Project 1" src="images/research/hpc-sustainable.png"/> -->
+          <h3>Accelerating Machine Learning Systems</h3>
+          
+          <p>Financed by CNPq</p>
+        
+          <button class="toggle-btn" onclick="toggleAbstract(this)">More Information</button>
+        
+          <p class="project-abstract" style="display: none;">
+            This project aims to accelerate machine learning workloads in HPC environments, with a focus on improving both performance and energy efficiency. We target enhancements in training time for ML models using multicore processors, GPUs, and cloud infrastructure. Applications include healthcare, particularly diabetic retinopathy detection. The research is structured around eight themes, addressing topics such as cloud-based training, I/O behavior analysis, mixed-precision optimization, instruction dispatch, cache usage, and the use of vector accelerators. The project builds on previous work and emphasizes system-level improvements across hardware and software.
+          </p>
         </div>
-        <div class="news-card">
-          <img alt="Project 2" src="images/research-2.png"/>
-          <h3>Energy-Efficient GPU Scheduling</h3>
-          <p>Dynamic resource allocation and frequency tuning strategies to reduce power usage without compromising HPC performance.</p>
+        
+        <div class="research-card">
+          <!--<img class="research-img" alt="Project 1" src="images/research/hpc-sustainable.png"/> -->
+          <h3>Centro de Inteligência Artificial Aplicada à Saúde</h3>
+          
+          <p>Financed by FAPERGS</p>
+        
+          <button class="toggle-btn" onclick="toggleAbstract(this)">More Information</button>
+        
+          <p class="project-abstract" style="display: none;">
+            Funded by the AVANÇAR RS Program and supported by FAPERGS, the CIARS network will carry out research and development activities using Data Science, Artificial Intelligence, and High-Performance Computing to address critical challenges in the healthcare sector. The initiative aims to generate significant advancements in healthcare processes through innovative computational methods. The project’s main goals include developing techniques for real-time health data monitoring in Rio Grande do Sul—particularly in the context of outbreaks and epidemics; building intelligent systems to support medical diagnoses; creating tools to help hospitals classify patients based on the urgency and complexity of care; and supporting decision-making for healthcare managers regarding the adoption of new technologies. The project also seeks to train highly qualified professionals to work in the emerging field of digital health.
+            </p>
         </div>
-        <div class="news-card">
-          <img alt="Project 3" src="images/research-3.png"/>
-          <h3>Large-Scale AI Model Optimization</h3>
-          <p>Parallel hyperparameter tuning and pruning for billion-parameter models on distributed multi-GPU environments.</p>
+
+        <div class="research-card">
+          <!--<img class="research-img" alt="Project 1" src="images/research/hpc-sustainable.png"/> -->
+          <h3>Towards Sustainability in HPC through the Dynamic Adaptation of Scientific Applications</h3>
+          
+          <p>Financed by FAPERGS</p>
+        
+          <button class="toggle-btn" onclick="toggleAbstract(this)">More Information</button>
+        
+          <p class="project-abstract" style="display: none;">
+            The growing adoption of HPC across scientific and industrial domains has made energy efficiency and CO₂ emission reduction critical for environmental sustainability. This project addresses the challenge of reducing the environmental impact of parallel applications without compromising performance by dynamically adapting computational resources such as the number of threads, CPU and GPU frequencies, and GPU kernel configurations. Unlike existing approaches that target individual optimizations in isolation, we propose a novel framework that enables the simultaneous and automatic adaptation of multiple hardware components. Our first contribution is a technique that jointly optimizes CPU and GPU resources to minimize CO₂ emissions. The second contribution integrates these techniques into a user-transparent framework capable of dynamically adjusting execution parameters based on application behavior.
+          </p>
         </div>
-        <div class="news-card">
-          <img alt="Project 4" src="images/research-1.png"/>
-          <h3>Fault-Tolerant Deep Learning</h3>
-          <p>Techniques for resilience and recovery in deep learning training under hardware or communication failures in HPC clusters.</p>
+
+        <div class="research-card">
+          <!--<img class="research-img" alt="Project 1" src="images/research/hpc-sustainable.png"/> -->
+          <h3>Innovation Center on Artificial Intelligence for Health</h3>
+          
+          <p>Financed by FAPESP and FAPEMIG</p>
+        
+          <button class="toggle-btn" onclick="toggleAbstract(this)">More Information</button>
+        
+          <p class="project-abstract" style="display: none;">
+            The focus of the Innovation Center on Artificial Intelligence for Health (CIIA-Health) project is to advance the research and development of artificial intelligence (AI) techniques and solutions to assist doctors and health professionals in the diagnosis and treatment of diseases and health managers in the organization of preventive health care actions to optimize the use of resources and improve the health of the population in Brazil. It is a multidisciplinary and multi-institutional research center, integrating the areas of computer science, physics, electrical and electronic engineering with health and wellness areas, such as medicine, pharmacy, nursing and biochemistry and immunology. The organizational arrangement for the center includes the private sector, with companies in the area of ​​health, technology and education, which in addition to financing part of the project, bring relevant problems, data and technological knowledge. The companies are Unimed-BH, Kunumi, Intel and Facens. The institutional arrangement of the Center will allow the group of researchers to advance the frontier of knowledge in the field of AI, as well as in health care techniques and procedures, supported by the innovative use of AI. This is evident in the Research Plan by the quality and scientific excellence of researchers in both AI and health care. The center includes 95 researchers with CNPq productivity grants, 19 of which are top researchers in the Brazilian ranking.
+            </p>
         </div>
-        <div class="news-card">
-          <img alt="Project 5" src="images/research-2.png"/>
-          <h3>In-Situ Visualization with AI Assistance</h3>
-          <p>Real-time visualization and pattern recognition using shared GPU execution between simulation and analysis components.</p>
+
+        <div class="research-card">
+          <!--<img class="research-img" alt="Project 1" src="images/research/hpc-sustainable.png"/> -->
+          <h3>Execution of Seismic Applications on Heterogeneous Computing Nodes</h3>
+          
+          <p>Financed by Petrobras</p>
+        
+          <button class="toggle-btn" onclick="toggleAbstract(this)">More Information</button>
+        
+          <p class="project-abstract" style="display: none;">
+            This project aims to evaluate the latest heterogeneous processor architectures regarding programmability, execution performance, code portability, and energy efficiency, focusing on seismic applications relevant to the oil and gas industry—or, alternatively, scientific applications involving typical simulation workloads such as finite element analysis and linear system solvers. The evaluation involves selecting suitable virtual machines from cloud providers, identifying the most appropriate programming environments, porting real-world applications, and measuring their performance and energy consumption across different architectures. The project also explores code optimization strategies and their impact on efficiency and portability. Its main contribution is to offer technical insights for designing computing environments that support scientific simulations in the oil, gas, and biofuels sectors, considering cost-performance trade-offs and energy sustainability requirements.
+            </p>
         </div>
-        <div class="news-card">
-          <img alt="Project 6" src="images/research-3.png"/>
-          <h3>AI-Driven Resource Management in HPC Clouds</h3>
-          <p>Autonomous scheduling and auto-scaling of cloud-native HPC workloads using reinforcement learning and predictive models.</p>
+
+        <div class="research-card">
+          <!--<img class="research-img" alt="Project 1" src="images/research/hpc-sustainable.png"/> -->
+          <h3>Transparent and Automatic Adaptation of Applications in HPC and Cloud Systems</h3>
+          
+          <p>Financed by CNPq</p>
+        
+          <button class="toggle-btn" onclick="toggleAbstract(this)">More Information</button>
+        
+          <p class="project-abstract" style="display: none;">
+            Modern high-performance and cloud computing systems increasingly rely on thread-level parallelism to meet the performance demands of applications across domains such as weather forecasting and machine learning. However, using all available resources does not always yield the best energy-performance trade-off. This project proposes an automatic and transparent framework for adapting parallel applications to available computational resources—such as CPU cores and frequency levels—without requiring code modification or recompilation. By integrating strategies like dynamic concurrency throttling and DVFS, the framework optimizes energy consumption and performance in HPC and cloud environments. The solution enables efficient resource utilization, binary reuse, and dynamic migration of applications to the most suitable hardware components during execution.
+            </p>
         </div>
+        
       </div>
     </div>
 
@@ -81,6 +129,11 @@
       <div class="publication-year">
         <h2>2025</h2>
         <ul class="publication-list">
+          <li>
+            <strong>Marques, J. A., Levchenko, K., Obelheiro, R. R., Parizotto, R., Gaspary, L. P.</strong><br>
+            “Balancing Act: Navigating Control and Data Plane Responsibilities for Fast Operation in Programmable Networks”, Springer JNSM.
+            <a href="https://link.springer.com/article/10.1007/s10922-025-09915-2" class="pub-link" target="_blank">Access Paper</a>
+          </li>
           <li>
             <strong>Maas, W., Rossi, F. D., Luizelli, M. C., Navaux, P.O.A., Lorenzon, A.F.</strong><br>
             “Investigating Cloud Instances to Achieve Optimal Trade-offs between Performance-Cost Efficiency”, Springer Computing.
@@ -94,24 +147,24 @@
         <ul class="publication-list">
           <li>
             <strong>Lorenzon, A. F., Navaux, P. O. A., Sardinha A., Messer, B.</strong><br>
-            “Towards Performance Portability of an Oil and Gas Application on Heterogeneous Architectures”, SBAC-PAD.
+            “Towards Performance Portability of an Oil and Gas Application on Heterogeneous Architectures”, IEEE SBAC-PAD.
             <a href="https://ieeexplore.ieee.org/abstract/document/10763888/" class="pub-link" target="_blank">Access Paper</a>
           </li>
 
           <li>
             <strong>Araujo, T., Lorenzon, A. F., Navaux, P. O. A.</strong><br>
-            “Leveraging Cloud Computing for Stock Market Forecasting with Reinforcement Learning”, SBAC-PADW.
+            “Leveraging Cloud Computing for Stock Market Forecasting with Reinforcement Learning”, IEEE SBAC-PADW.
             <a href="https://ieeexplore.ieee.org/abstract/document/10764559" class="pub-link" target="_blank">Access Paper</a>
           </li>
           <li>
             <strong>Napa, M. A. G., Lorenzon, A. F.</strong><br>
-            “A Systematic Literature Review of I/O Optimization in HPC and Cloud Computing Environments”, SBAC-PADW.
+            “A Systematic Literature Review of I/O Optimization in HPC and Cloud Computing Environments”, IEEE SBAC-PADW.
             <a href="https://ieeexplore.ieee.org/abstract/document/10764543" class="pub-link" target="_blank">Access Paper</a>
           </li>
           
           <li>
             <strong>Reis, M. A., Kunas, C. A., Araujo, T. S., Schneiders, P. B. A., Nakayama, L. F., Rados, D. R. V., Umpierre, R. N., Berwanger, D. L., Malerbi, F. K., Navaux, P. O. A., Schaan, B. D..</strong><br>
-            “Advancing healthcare with artificial intelligence: diagnostic accuracy of machine learning algorithm in diagnosis of diabetic retinopathy in the Brazilian population”, Diabetology and Metabolic Syndrome.
+            “Advancing healthcare with artificial intelligence: diagnostic accuracy of machine learning algorithm in diagnosis of diabetic retinopathy in the Brazilian population”, Springer Diabetology and Metabolic Syndrome.
             <a href="https://link.springer.com/article/10.1186/s13098-024-01447-0" class="pub-link" target="_blank">Access Paper</a>
           </li>
 
@@ -132,7 +185,7 @@
           </li>
           <li>
             <strong>Krause, A. B., Santos, P. C., Lorenzon, A. F., Navaux, P. O. A.</strong><br>
-            “HBPB, applying reuse distance to improve cache efficiency proactively”, JPDC.
+            “HBPB, applying reuse distance to improve cache efficiency proactively”, Elsevier JPDC.
             <a href="https://www.sciencedirect.com/science/article/abs/pii/S0743731524000832" class="pub-link" target="_blank">Access Paper</a>
           </li>
           <li>
@@ -142,17 +195,17 @@
           </li>
           <li>
             <strong>Maas, W., Souza, P. S., Luizelli, M. C., Rossi, F. D., Navaux, P. O. A., Lorenzon, A. F.</strong><br>
-            “An ANN-Guided Multi-Objective Framework for Power-Performance Balancing in HPC Systems”, Computing Frontiers.
+            “An ANN-Guided Multi-Objective Framework for Power-Performance Balancing in HPC Systems”, ACM CF.
             <a href="https://dl.acm.org/doi/abs/10.1145/3649153.3649185" class="pub-link" target="_blank">Access Paper</a>
           </li>
           <li>
             <strong>Freytag, G., Kunas, C. A., Rech, P. Navaux, P. O. A.</strong><br>
-            “Interleaved Execution of Approximated CUDA Kernels in Iterative Applications", PDP.
+            “Interleaved Execution of Approximated CUDA Kernels in Iterative Applications", Euromicro PDP.
             <a href="https://ieeexplore.ieee.org/abstract/document/10495550" class="pub-link" target="_blank">Access Paper</a>
           </li>
           <li>
             <strong>Schussler, B. , Rigon, P., Lorenzon, A. F., Navaux, P. O. A.</strong><br>
-            “BTO, Block and Thread Optimization of GPU Kernels on Geophysical Exploration", PDP.
+            “BTO, Block and Thread Optimization of GPU Kernels on Geophysical Exploration", Euromicro PDP.
             <a href="https://ieeexplore.ieee.org/abstract/document/10495581" class="pub-link" target="_blank">Access Paper</a>
           </li>
         </ul>
@@ -168,8 +221,18 @@
         </li>
         <li>
           <strong>Carneiro, A. R., Bez, J. L., Osthoff, C., Schnorr, L. M., Navaux, P.O.A.</strong><br>
-          “Uncovering i/o demands on hpc platforms: Peeking under the hood of santos dumont”, JPDC.
+          “Uncovering i/o demands on hpc platforms: Peeking under the hood of santos dumont”, Elsevier JPDC.
           <a href="https://www.sciencedirect.com/science/article/pii/S0743731523001144" class="pub-link" target="_blank">Access Paper</a>
+        </li>
+        <li>
+          <strong>Nesi, L. N., Legrand, A., Schnorr, L. M.</strong><br>
+          “Asynchronous multi-phase task-based applications: : Employing different nodes to design better distributions”, Elsevier FGCS.
+          <a href="https://dl.acm.org/doi/abs/10.1016/j.future.2023.05.005" class="pub-link" target="_blank">Access Paper</a>
+        </li>
+        <li>
+          <strong>Marques, J. A., Levchenko, K., Gaspary, L. P.</strong><br>
+          “Responding to Network Failures at Data-plane Speeds with Network Programmability”, IEEE/IFIP NOMS.
+          <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10154329" class="pub-link" target="_blank">Access Paper</a>
         </li>
       </ul>
     </div>
@@ -178,9 +241,8 @@
     <div id="softwares" class="tab-content">
       <h1 class="section-title">Softwares</h1>
       <ul class="software-list">
-        <li><strong>SchedSim:</strong> Simulation toolkit for evaluating GPU-sharing strategies in multi-user environments.</li>
-        <li><strong>DeepCheck:</strong> Python library for tracking accuracy and recovery overheads in resilient DL training.</li>
-        <li><strong>VizStream:</strong> Lightweight framework for in-situ AI-assisted visualization and compression.</li>
+        <li><strong>To appear:</strong> Page under construction</li>
+        
       </ul>
     </div>
     
@@ -199,7 +261,20 @@
   document.getElementById(id).classList.add('active');
   event.currentTarget.classList.add('active');
 }
-    
+function toggleAbstract(button) {
+  const paragraph = button.nextElementSibling;
+  const card = button.closest(".research-card");
+
+  if (paragraph.style.display === "none") {
+    paragraph.style.display = "block";
+    card.style.maxHeight = "1000px"; // permite expansão
+    button.textContent = "Less Information";
+  } else {
+    paragraph.style.display = "none";
+    card.style.maxHeight = "280px"; // retorna à altura reduzida
+    button.textContent = "More Information";
+  }
+}
   </script>
 </body>
 </html>
